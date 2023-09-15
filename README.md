@@ -1,8 +1,7 @@
 # Nuxt 3 + Vuetify 3 Starter
 
-![Starter Image](/public/starter.png)
-Nuxt 3 is now stable. Vuetify 3 is now stable. I will be updating this template as we go along. Feel free to open an issue if you have any questions or suggestions.
-This template here will get you up & running with adding the two together :)
+![Starter Image](/public/logo.png)
+Nuxt 3 is now stable. Vuetify 3 is now stable. Feel free to open an issue if you have any questions or suggestions.
 
 ### Run the app
 
@@ -10,10 +9,26 @@ This template here will get you up & running with adding the two together :)
 
 ```bash
 npm install
+# or
+yarn install
 ```
 
 2. Run the app
 
 ```bash
 npm run dev
+# or
+yarn dev
+```
+
+3. Build the app
+
+```bash
+# for ssr single page application
+npm run generate
+yarn generate
+
+# for ssr mode
+npm run build
+yarn build
 ```
