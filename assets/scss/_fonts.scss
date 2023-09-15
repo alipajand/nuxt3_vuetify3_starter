@@ -1,0 +1,15 @@
+$path: '/assets/fonts';
+
+@mixin font-face-creator($fontName-app, $path, $fontName-path, $weight) {
+  @font-face {
+    font-style: normal;
+    font-weight: $weight;
+    font-display: swap;
+    font-family: $fontName-app;
+    src: url('#{$path}/#{$fontName-path}.eot');
+    src: url('#{$path}/#{$fontName-path}.eot?#iefix') format('embedded-opentype'),
+      url('#{$path}/#{$fontName-path}.woff') format('woff'), url('#{$path}/#{$fontName-path}.ttf') format('truetype');
+  }
+}
+
+@include font-face-creator('proxima', '#{$path}/proxima', 'ProximaNova-Regular', normal);
